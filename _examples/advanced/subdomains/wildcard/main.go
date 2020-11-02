@@ -4,8 +4,8 @@
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/adaptors/httprouter"
 )
 
 // register a dynamic-wildcard subdomain to your server machine(dns/...) first, check ./hosts if you use windows.

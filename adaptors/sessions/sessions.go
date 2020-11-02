@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/kataras/iris.v6"
+	"github.com/fitraditya/iris.v6"
 )
 
 type (

@@ -3,8 +3,8 @@ package basicauth
 import (
 	"time"
 
+	"github.com/fitraditya/iris.v6"
 	"github.com/imdario/mergo"
-	"gopkg.in/kataras/iris.v6"
 )
 
 const (

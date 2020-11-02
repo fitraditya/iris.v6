@@ -1,6 +1,6 @@
 # Changelog
 
-**How to upgrade**: Open your command-line and execute this command: `go get -u gopkg.in/kataras/iris.v6`.
+**How to upgrade**: Open your command-line and execute this command: `go get -u github.com/fitraditya/iris.v6`.
 
 ## Looking for free support?
 
@@ -123,24 +123,24 @@ app.Get("/send_mail", func(ctx *iris.Context){
 
 - https://github.com/iris-contrib/plugin      ->  https://github.com/iris-contrib/adaptors
 
-- `import "github.com/iris-contrib/middleware/basicauth"` -> `import "gopkg.in/kataras/iris.v6/middleware/basicauth"`
-- `import "github.com/iris-contrib/middleware/i18n"` -> `import "gopkg.in/kataras/iris.v6/middleware/i18n"`
-- `import "github.com/iris-contrib/middleware/logger"` -> `import "gopkg.in/kataras/iris.v6/middleware/logger"`
-- `import "github.com/iris-contrib/middleware/recovery"` -> `import "gopkg.in/kataras/iris.v6/middleware/recover"`
+- `import "github.com/iris-contrib/middleware/basicauth"` -> `import "github.com/fitraditya/iris.v6/middleware/basicauth"`
+- `import "github.com/iris-contrib/middleware/i18n"` -> `import "github.com/fitraditya/iris.v6/middleware/i18n"`
+- `import "github.com/iris-contrib/middleware/logger"` -> `import "github.com/fitraditya/iris.v6/middleware/logger"`
+- `import "github.com/iris-contrib/middleware/recovery"` -> `import "github.com/fitraditya/iris.v6/middleware/recover"`
 
 
-- `import "github.com/iris-contrib/plugin/typescript"` -> `import "gopkg.in/kataras/iris.v6/adaptors/typescript"`
-- `import "github.com/iris-contrib/plugin/editor"` -> `import "gopkg.in/kataras/iris.v6/adaptors/typescript/editor"`
-- `import "github.com/iris-contrib/plugin/cors"` -> `import "gopkg.in/kataras/iris.v6/adaptors/cors"`
-- `import "github.com/iris-contrib/plugin/gorillamux"` -> `import "gopkg.in/kataras/iris.v6/adaptors/gorillamux"`
+- `import "github.com/iris-contrib/plugin/typescript"` -> `import "github.com/fitraditya/iris.v6/adaptors/typescript"`
+- `import "github.com/iris-contrib/plugin/editor"` -> `import "github.com/fitraditya/iris.v6/adaptors/typescript/editor"`
+- `import "github.com/iris-contrib/plugin/cors"` -> `import "github.com/fitraditya/iris.v6/adaptors/cors"`
+- `import "github.com/iris-contrib/plugin/gorillamux"` -> `import "github.com/fitraditya/iris.v6/adaptors/gorillamux"`
 - `import github.com/iris-contrib/plugin/oauth"` -> `import "github.com/iris-contrib/adaptors/oauth"`
 
 
-- `import "github.com/kataras/go-template/html"` -> `import "gopkg.in/kataras/iris.v6/adaptors/view"`
-- `import "github.com/kataras/go-template/django"` -> `import "gopkg.in/kataras/iris.v6/adaptors/view"`
-- `import "github.com/kataras/go-template/pug"` -> `import "gopkg.in/kataras/iris.v6/adaptors/view"`
-- `import "github.com/kataras/go-template/handlebars"` -> `import "gopkg.in/kataras/iris.v6/adaptors/view"`
-- `import "github.com/kataras/go-template/amber"` -> `import "gopkg.in/kataras/iris.v6/adaptors/view"`
+- `import "github.com/kataras/go-template/html"` -> `import "github.com/fitraditya/iris.v6/adaptors/view"`
+- `import "github.com/kataras/go-template/django"` -> `import "github.com/fitraditya/iris.v6/adaptors/view"`
+- `import "github.com/kataras/go-template/pug"` -> `import "github.com/fitraditya/iris.v6/adaptors/view"`
+- `import "github.com/kataras/go-template/handlebars"` -> `import "github.com/fitraditya/iris.v6/adaptors/view"`
+- `import "github.com/kataras/go-template/amber"` -> `import "github.com/fitraditya/iris.v6/adaptors/view"`
 
 **Read more below** for the lines you have to change. Package-level removal is critical, you will have build-time errors. Router(less) is MUST, otherwise your app will fatal with a detailed error message.
 
@@ -171,8 +171,8 @@ Example:
 package main
 
 import (
-  "gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/httprouter" // <---- NEW
+  "github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/httprouter" // <---- NEW
 )
 
 func main() {
@@ -267,8 +267,8 @@ Example:
 package main
 
 import (
-  "gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/gorillamux" // <---- NEW
+  "github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/gorillamux" // <---- NEW
 )
 
 func main() {
@@ -404,9 +404,9 @@ Example:
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/gorillamux" // <--- NEW (previous section)
-	"gopkg.in/kataras/iris.v6/adaptors/view" // <--- NEW it contains all the template engines
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/adaptors/gorillamux" // <--- NEW (previous section)
+	"github.com/fitraditya/iris.v6/adaptors/view" // <--- NEW it contains all the template engines
 )
 
 func main() {
@@ -464,7 +464,7 @@ app.UseTemplate(django.New()).Directory("./templates", ".html")/*.Binary(...)*/)
 
 **AFTER**
 ```go
-import ""gopkg.in/kataras/iris.v6/adaptors/view"
+import ""github.com/fitraditya/iris.v6/adaptors/view"
 // ...
 app := iris.New()
 app.Adapt(view.Django("./templates",".htmll")/*.Binary(...)*/)
@@ -559,8 +559,8 @@ func main(){
 package controllers
 
 import (
-  "gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/httprouter"
+  "github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/httprouter"
 )
 
 func init(){
@@ -575,7 +575,7 @@ func init(){
 package main
 
 import (
-  "gopkg.in/kataras/iris.v6"
+  "github.com/fitraditya/iris.v6"
    _ "github.com/mypackage/controllers"
 )
 
@@ -662,8 +662,8 @@ func main() {
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/gorillamux"
+	"github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/gorillamux"
 )
 
 func  GetAllUsersHandler(ctx *iris.Context) {
@@ -900,8 +900,8 @@ Example:
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/gorillamux"
+	"github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/gorillamux"
 	"github.com/rs/cors"
 )
 
@@ -972,9 +972,9 @@ package main
 import (
 	"time"
 
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
-	"gopkg.in/kataras/iris.v6/adaptors/sessions"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/adaptors/httprouter"
+	"github.com/fitraditya/iris.v6/adaptors/sessions"
 )
 
 func main() {
@@ -1003,7 +1003,7 @@ func main() {
 	})
 
 	// OPTIONALLY:
-	// import "gopkg.in/kataras/iris.v6/adaptors/sessions/sessiondb/redis"
+	// import "github.com/fitraditya/iris.v6/adaptors/sessions/sessiondb/redis"
 	// or import "github.com/kataras/go-sessions/sessiondb/$any_available_community_database"
 	// mySessions.UseDatabase(redis.New(...))
 
@@ -1159,10 +1159,10 @@ package main
 import (
 	"fmt" // optional
 
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
-	"gopkg.in/kataras/iris.v6/adaptors/view"
-	"gopkg.in/kataras/iris.v6/adaptors/websocket"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/adaptors/httprouter"
+	"github.com/fitraditya/iris.v6/adaptors/view"
+	"github.com/fitraditya/iris.v6/adaptors/websocket"
 )
 
 type clientPage struct {
@@ -1268,8 +1268,8 @@ package main
 import (
      "log"
 
-    "gopkg.in/kataras/iris.v6"
-    "gopkg.in/kataras/iris.v6/adaptors/httprouter"
+    "github.com/fitraditya/iris.v6"
+    "github.com/fitraditya/iris.v6/adaptors/httprouter"
     "github.com/googollee/go-socket.io"
 )
 
@@ -1338,8 +1338,8 @@ Example:
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/gorillamux"
+	"github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/gorillamux"
 	"github.com/rs/cors"
 )
 
@@ -1368,9 +1368,9 @@ Example:
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-  "gopkg.in/kataras/iris.v6/adaptors/httprouter"
-  "gopkg.in/kataras/iris.v6/adaptors/cors"
+	"github.com/fitraditya/iris.v6"
+  "github.com/fitraditya/iris.v6/adaptors/httprouter"
+  "github.com/fitraditya/iris.v6/adaptors/cors"
 )
 
 func main(){

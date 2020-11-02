@@ -1,7 +1,7 @@
 package evaluator
 
 import (
-	"gopkg.in/kataras/iris.v6/_future/ipel/ast"
+	"github.com/fitraditya/iris.v6/_future/ipel/ast"
 )
 
 // exported to be able to change how param types are evaluating

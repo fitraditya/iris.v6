@@ -5,14 +5,14 @@ package websocket
 import (
 	"strings"
 
-	"gopkg.in/kataras/iris.v6"
+	"github.com/fitraditya/iris.v6"
 )
 
 // New returns a new websocket server policy adaptor.
 func New(cfg Config) Server {
 	return &server{
-		config: cfg.Validate(),
-		rooms:  make(map[string][]string, 0),
+		config:                cfg.Validate(),
+		rooms:                 make(map[string][]string, 0),
 		onConnectionListeners: make([]ConnectionFunc, 0),
 	}
 }

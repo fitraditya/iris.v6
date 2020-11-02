@@ -1,8 +1,8 @@
 package iris_test
 
 import (
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/httptest"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/httptest"
 
 	"testing"
 )

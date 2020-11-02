@@ -5,14 +5,14 @@ import (
 	"strconv"
 	"time"
 
-	"gopkg.in/kataras/iris.v6"
+	"github.com/fitraditya/iris.v6"
 )
 
 //  +------------------------------------------------------------+
 //  | Middleware usage                                           |
 //  +------------------------------------------------------------+
 //
-// import "gopkg.in/kataras/iris.v6/middleware/basicauth"
+// import "github.com/fitraditya/iris.v6/middleware/basicauth"
 //
 // app := iris.New()
 // authentication := basicauth.Default(map[string]string{"myusername": "mypassword", "mySecondusername": "mySecondpassword"})

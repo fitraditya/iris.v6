@@ -3,8 +3,8 @@ package websocket
 import (
 	"sync"
 
+	"github.com/fitraditya/iris.v6"
 	"github.com/gorilla/websocket"
-	"gopkg.in/kataras/iris.v6"
 )
 
 // Server is the websocket server,
@@ -184,7 +184,7 @@ func (s *server) Handler() iris.HandlerFunc {
 	// build the upgrader once
 	c := s.config
 
-	upgrader := websocket.Upgrader{ReadBufferSize: c.ReadBufferSize, WriteBufferSize: c.WriteBufferSize, Error: c.Error, CheckOrigin: c.CheckOrigin , Subprotocols:c.Subprotocols}
+	upgrader := websocket.Upgrader{ReadBufferSize: c.ReadBufferSize, WriteBufferSize: c.WriteBufferSize, Error: c.Error, CheckOrigin: c.CheckOrigin, Subprotocols: c.Subprotocols}
 	return func(ctx *iris.Context) {
 		// Upgrade upgrades the HTTP server connection to the WebSocket protocol.
 		//

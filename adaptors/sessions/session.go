@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/fitraditya/iris.v6"
 	"github.com/kataras/go-errors"
-	"gopkg.in/kataras/iris.v6"
 )
 
 type (

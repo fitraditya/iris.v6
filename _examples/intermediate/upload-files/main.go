@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
-	"gopkg.in/kataras/iris.v6/adaptors/view"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/adaptors/httprouter"
+	"github.com/fitraditya/iris.v6/adaptors/view"
 )
 
 func main() {

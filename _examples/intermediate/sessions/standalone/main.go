@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
-	"gopkg.in/kataras/iris.v6/adaptors/sessions"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/adaptors/httprouter"
+	"github.com/fitraditya/iris.v6/adaptors/sessions"
 )
 
 func main() {
@@ -32,7 +32,7 @@ func main() {
 	})
 
 	// OPTIONALLY:
-	// import "gopkg.in/kataras/iris.v6/adaptors/sessions/sessiondb/redis"
+	// import "github.com/fitraditya/iris.v6/adaptors/sessions/sessiondb/redis"
 	// or import "github.com/kataras/go-sessions/sessiondb/$any_available_community_database"
 	// mySessions.UseDatabase(redis.New(...))
 

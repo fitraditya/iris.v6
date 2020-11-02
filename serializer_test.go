@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"testing"
 
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/httptest"
+	"github.com/fitraditya/iris.v6"
+	"github.com/fitraditya/iris.v6/httptest"
 )
 
 type renderTestInformationType struct {

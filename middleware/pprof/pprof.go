@@ -17,7 +17,7 @@ import (
 	"net/http/pprof"
 	"strings"
 
-	"gopkg.in/kataras/iris.v6"
+	"github.com/fitraditya/iris.v6"
 )
 
 // New returns a new pprof (profile, cmdline, symbol, goroutine, heap, threadcreate, debug/block) Middleware.

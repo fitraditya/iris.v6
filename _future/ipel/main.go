@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"gopkg.in/kataras/iris.v6/_future/ipel/repl"
+	"github.com/fitraditya/iris.v6/_future/ipel/repl"
 )
 
 func main() {

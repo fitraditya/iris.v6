@@ -6,8 +6,8 @@ import (
 	"io"
 	"strings"
 
+	"github.com/fitraditya/iris.v6"
 	"github.com/kataras/go-template"
-	"gopkg.in/kataras/iris.v6"
 )
 
 // Adaptor contains the common actions

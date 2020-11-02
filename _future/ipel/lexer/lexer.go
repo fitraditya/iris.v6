@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"gopkg.in/kataras/iris.v6/_future/ipel/token"
+	"github.com/fitraditya/iris.v6/_future/ipel/token"
 )
 
 type Lexer struct {

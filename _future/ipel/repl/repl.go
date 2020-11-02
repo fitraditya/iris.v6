@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"gopkg.in/kataras/iris.v6/_future/ipel/lexer"
-	"gopkg.in/kataras/iris.v6/_future/ipel/token"
+	"github.com/fitraditya/iris.v6/_future/ipel/lexer"
+	"github.com/fitraditya/iris.v6/_future/ipel/token"
 )
 
 const PROMPT = ">> "

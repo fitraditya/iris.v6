@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"gopkg.in/kataras/iris.v6/_future/ipel/ast"
+	"github.com/fitraditya/iris.v6/_future/ipel/ast"
 )
 
 func TestParseError(t *testing.T) {

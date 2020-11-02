@@ -76,4 +76,4 @@ It doesn't contains "best ways" neither explains all its features. It's just a s
 
 > Don't forget to take a quick look or add your own [examples in the community's repository](https://github.com/iris-contrib/examples)!
 
-> Developers should read the official [documentation](https://godoc.org/gopkg.in/kataras/iris.v6), in depth, for better understanding.
+> Developers should read the official [documentation](https://godoc.org/github.com/fitraditya/iris.v6), in depth, for better understanding.

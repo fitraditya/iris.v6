@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/fitraditya/iris.v6"
 	"github.com/iris-contrib/httpexpect"
-	"gopkg.in/kataras/iris.v6"
 )
 
 type (

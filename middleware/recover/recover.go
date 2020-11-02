@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"gopkg.in/kataras/iris.v6"
+	"github.com/fitraditya/iris.v6"
 )
 
 func getRequestLogs(ctx *iris.Context) string {

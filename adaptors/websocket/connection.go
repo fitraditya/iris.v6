@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/fitraditya/iris.v6"
 	"github.com/gorilla/websocket"
-	"gopkg.in/kataras/iris.v6"
 )
 
 type (
