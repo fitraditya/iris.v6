@@ -1,5 +1,7 @@
 # Iris
 
+This repository forked from its original repository (gopkg.in/iris-framework/iris.v6) because the current version/tag that we used has been removed.
+
 <p>
 Iris is an <b>efficient</b> and well-designed, <b>cross-platform, web framework</b> with robust set of <b>features</b>.<br/>Build your own <b>high-performance</b> web applications and <b>APIs</b> powered by unlimited <b>potentials and portability</b>.<br/>
 <a href="https://travis-ci.org/kataras/iris"><img src="https://api.travis-ci.org/kataras/iris.svg?branch=v6&style=flat-square" alt="Build Status"></a>
