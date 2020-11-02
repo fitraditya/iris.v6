@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/iris-contrib/formBinder"
+	formBinder "github.com/iris-contrib/formBinder"
 	"github.com/kataras/go-errors"
 )
 
